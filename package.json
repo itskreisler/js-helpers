@@ -6,7 +6,6 @@
   "type": "module",
   "scripts": {
     "test": "cross-env NODE_ENV=test node --test test/",
-    "babel": "babel src --out-dir lib",
     "dev:node": "node --watch develop.js",
     "dev:nodemon": "nodemon develop.js",
     "cmd:publish": "npm publish --access public"
@@ -39,9 +38,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "7.22.5",
-    "@babel/core": "7.22.5",
-    "@babel/preset-env": "7.22.5",
     "cross-env": "7.0.3",
     "minify": "10.2.0",
     "nodemon": "2.0.22",
