@@ -1,43 +1,44 @@
-# JS Google Translate Free
+# @kreisler/js-helpers
 
-Simple JS library for talking to Google's Translate API for free.
-
-Eliminates IP request limitations
+`@kreisler/js-helpers` is a Javascript library for dealing with code repetition
 
 ## Usage
 
 Install package
 
 ```node
-npm i @kreisler/js-google-translate-free
+npm i @kreisler/js-helpers
 ```
 
-### Import module
+## Import module
 
 ```mjs
-import jsGoogleTranslateFree from "@kreisler/js-google-translate-free";
+// Using ES6 imports
+import helpers from "@kreisler/js-helpers";
 ```
 
 or
 
-### Import commonjs
+## Import commonjs
 
 ```cjs
-const jsGoogleTranslateFree = require("@kreisler/js-google-translate-free");
+// Using Node.js `require()`
+const helpers = require("@kreisler/js-helpers");
 ```
 
-#### Example
+## Methods
 
-```js
-(async () => {
-  try {
-    const source = "es";
-    const target = "en";
-    const text = "buenos días";
-    const translation = await jsGoogleTranslateFree.translate(source, target, text);
-    console.log(translation); // Good morning
-  } catch (error) {
-    console.error(error);
-  }
-})();
-```
+| Name    | Description                                                                                 |
+|---------|---------------------------------------------------------------------------------------------|
+| `createApi` | Utility function to create an API.                                             |
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

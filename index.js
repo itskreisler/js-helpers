@@ -1,17 +1,22 @@
 /**
  * @author Kreisler Ramirez Sierra
- * @file jsGoogleTranslateFree
+ * @file Utility functions for javascript
  */
 
 // ━━ TYPE DEFINITIONS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 /**
- * The `jsGoogleTranslateFree()` function takes a source language, a target language, and a text to translate, and returns a translation.
+ * Utility functions for javascript
  *
- * @version 2.1.0
+ * @version 1.0.0
  * @author Kreisler Ramirez Sierra
- * @module jsGoogleTranslateFree
+ * @module helpers
  */
-const jsGoogleTranslateFree = require('./src')
+import helpers from './src/index.js'
 
 // ━━ EXPORT MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-module.exports = jsGoogleTranslateFree
+export default helpers
+export const jsonPrettier = helpers.jsonPrettier
+export const utf8Tob64 = helpers.utf8Tob64
+export const b64Toutf8 = helpers.b64Toutf8
+export const normalize = helpers.normalize
+export const createApi = helpers.createApi
