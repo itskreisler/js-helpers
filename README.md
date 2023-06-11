@@ -31,6 +31,7 @@ const helpers = require("@kreisler/js-helpers");
 | Name    | Description                                                                                 |
 |---------|---------------------------------------------------------------------------------------------|
 | `createApi` | Utility function to create an API.                                             |
+| `stripHtmlTags` | Utility function to strip HTML tags.                                             |
 
 ## Contributing
 

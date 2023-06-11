@@ -3,4 +3,6 @@ const stripHtmlTags = (str, exp = /<[^>]*>/g) => {
   return str.replace(exp, '')
 }
 
-module.exports = stripHtmlTags
+export default stripHtmlTags
+const _stripHtmlTags = stripHtmlTags
+export { _stripHtmlTags as stripHtmlTags }

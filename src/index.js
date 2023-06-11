@@ -2,6 +2,7 @@ import b64 from './fn/b64.js'
 import jsonPrettier from './fn/json_prettier.js'
 import normalize from './fn/normalize.js'
 import createApi from './fn/create_api.js'
+import stripHtmlTags from './fn/strip_html_tags.js'
 
 /**
  *
@@ -11,6 +12,7 @@ import createApi from './fn/create_api.js'
  * @property {import('./fn/b64.js').b64Toutf8} b64Toutf8 - Utility function to convert a base64 string to UTF-8.
  * @property {import('./fn/normalize.js').normalize} normalize - Utility function to normalize a string.
  * @property {import('./fn/create_api.js').createApi} createApi - Utility function to create an API.
+ * @property {import('./fn/strip_html_tags.js').stripHtmlTags} stripHtmlTags - Utility function to strip HTML tags.
  */
 
 /**
@@ -21,7 +23,8 @@ const helpers = {
   utf8Tob64: b64.utf8Tob64,
   b64Toutf8: b64.b64Toutf8,
   normalize,
-  createApi
+  createApi,
+  stripHtmlTags
 }
 // ━━ EXPORT MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 export default helpers
@@ -35,3 +38,5 @@ const _normalize = normalize
 export { _normalize as normalize }
 const _createApi = createApi
 export { _createApi as createApi }
+const _stripHtmlTags = stripHtmlTags
+export { _stripHtmlTags as stripHtmlTags }

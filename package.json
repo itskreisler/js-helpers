@@ -1,6 +1,6 @@
 {
-  "name": "@kreisler/helpers",
-  "version": "1.0.1",
+  "name": "@kreisler/js-helpers",
+  "version": "3.0.0",
   "description": "Utility functions for javascript",
   "main": "index.js",
   "type": "module",
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itskreisler/helpers.git"
+    "url": "git+https://github.com/itskreisler/js-helpers.git"
   },
-  "homepage": "https://github.com/itskreisler/helpers#readme",
+  "homepage": "https://github.com/itskreisler/js-helpers#readme",
   "bugs": {
-    "url": "https://github.com/itskreisler/helpers/issues"
+    "url": "https://github.com/itskreisler/js-helpers/issues"
   },
   "keywords": [
     "helpers",

@@ -7,7 +7,7 @@
 /**
  * Utility functions for javascript
  *
- * @version 1.0.0
+ * @version 3.0.0
  * @author Kreisler Ramirez Sierra
  * @module helpers
  */
@@ -20,3 +20,4 @@ export const utf8Tob64 = helpers.utf8Tob64
 export const b64Toutf8 = helpers.b64Toutf8
 export const normalize = helpers.normalize
 export const createApi = helpers.createApi
+export const stripHtmlTags = helpers.stripHtmlTags
