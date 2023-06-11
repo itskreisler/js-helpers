@@ -1,6 +1,6 @@
 {
   "name": "@kreisler/helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility functions for javascript",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "test": "cross-env NODE_ENV=test node --test test/",
     "dev:node": "node --watch develop.js",
     "dev:nodemon": "nodemon develop.js",
-    "publish": "npm publish --access public"
+    "cmd:publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
