@@ -1,4 +1,6 @@
 const isNull = (obj) => {
   return (typeof valor === 'object' && obj === null) || Object.is(obj, null)
 }
-module.exports = isNull
+export default isNull
+const _isNull = isNull
+export { _isNull as isNull }

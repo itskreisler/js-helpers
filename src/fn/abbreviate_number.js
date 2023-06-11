@@ -9,4 +9,6 @@ const abbreviateNumber = (number) => {
   }
   return number.toString()
 }
-module.exports = abbreviateNumber
+export default abbreviateNumber
+const _abbreviateNumber = abbreviateNumber
+export { _abbreviateNumber as abbreviateNumber }

@@ -8,6 +8,8 @@ const arrayShuffleV1 = (array) => {
 const arrayShuffleV2 = (array) => {
   return array.sort(() => Math.random() - 0.5)
 }
-module.exports = arrayShuffleV1
-module.exports.arrayShuffleV1 = arrayShuffleV1
-module.exports.arrayShuffleV2 = arrayShuffleV2
+export default arrayShuffleV1
+const _arrayShuffleV1 = arrayShuffleV1
+export { _arrayShuffleV1 as arrayShuffleV1 }
+const _arrayShuffleV2 = arrayShuffleV2
+export { _arrayShuffleV2 as arrayShuffleV2 }

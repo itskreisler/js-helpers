@@ -14,16 +14,32 @@ npm i @kreisler/js-helpers
 
 ```mjs
 // Using ES6 imports
-import helpers from "@kreisler/js-helpers";
+import jsHelpers from "@kreisler/js-helpers";
 ```
 
 or
 
-## Import commonjs
+## Import commonjs not supported by default, use import() dynamic import instead
 
-```cjs
-// Using Node.js `require()`
-const helpers = require("@kreisler/js-helpers");
+```js
+// Using Node.js `import()`
+const jsHelpers = import('@kreisler/js-helpers');
+```
+
+## Examples
+
+```js
+// using import module from "package-name"
+const { stripHtmlTags } = jsHelpers
+console.log(stripHtmlTags('<h1>Hello World</h1>'))
+```
+
+```js
+// using import() dynamic import
+(async () => {
+  const { stripHtmlTags } = await jsHelpers
+  console.log(stripHtmlTags('<h1>Hello World</h1>'))
+})()
 ```
 
 ## Methods
