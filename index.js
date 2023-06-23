@@ -21,3 +21,4 @@ export const b64Toutf8 = helpers.b64Toutf8
 export const normalize = helpers.normalize
 export const createApi = helpers.createApi
 export const stripHtmlTags = helpers.stripHtmlTags
+export const debounce = helpers.debounce

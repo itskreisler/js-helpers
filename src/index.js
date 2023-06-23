@@ -3,6 +3,7 @@ import jsonPrettier from './fn/json_prettier.js'
 import normalize from './fn/normalize.js'
 import createApi from './fn/create_api.js'
 import stripHtmlTags from './fn/strip_html_tags.js'
+import debounce from './fn/debounce.js'
 
 /**
  *
@@ -13,6 +14,7 @@ import stripHtmlTags from './fn/strip_html_tags.js'
  * @property {import('./fn/normalize.js').normalize} normalize - Utility function to normalize a string.
  * @property {import('./fn/create_api.js').createApi} createApi - Utility function to create an API.
  * @property {import('./fn/strip_html_tags.js').stripHtmlTags} stripHtmlTags - Utility function to strip HTML tags.
+ * @property {import('./fn/debounce.js').debounce} debounce - Utility function to debounce a function.
  */
 
 /**
@@ -24,7 +26,9 @@ const helpers = {
   b64Toutf8: b64.b64Toutf8,
   normalize,
   createApi,
-  stripHtmlTags
+  stripHtmlTags,
+  debounce
+
 }
 // ━━ EXPORT MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 export default helpers
@@ -40,3 +44,5 @@ const _createApi = createApi
 export { _createApi as createApi }
 const _stripHtmlTags = stripHtmlTags
 export { _stripHtmlTags as stripHtmlTags }
+const _debounce = debounce
+export { _debounce as debounce }
